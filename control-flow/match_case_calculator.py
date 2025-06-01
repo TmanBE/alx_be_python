@@ -18,12 +18,9 @@ def new_calculation(a, b, operation):
             return num1 * num2
             #print("The result is", result.)
         case "/":
-            if num2 != 0:
-                return num1 / num2
-            else:
-                print("Cannot divide by zero.")
+            return num1 / num2 if num2 != 0 else "Cannot divide by zero"
         case _:
-            print("Invalid operation selected")
+            return "Invalid operation selected"
 
 result = new_calculation(num1, num2, opera_tion)
-print("The result is", result)
+print(f"The result is {result}.")
