@@ -7,18 +7,18 @@ opera_tion = input("Choose the operation (+, -, *, /): ")
 match opera_tion:
     case "+":
         result = num1 + num2
-        print("The result is", result)
+        print("The result is", result.)
     case "-":
         result = num1 - num2
-        print("The result is", result)
+        print("The result is", result.)
     case "*":
         result = num1 * num2
-        print("The result is", result)
+        print("The result is", result.)
     case "/":
         if num2 == 0:
-            print("Cannot divide by zero")
+            print("Cannot divide by zero.")
         else:
             result = num1 / num2
-            print("The result is", result)
+            print("The result is", result.)
     case _:
         print("Invalid operation selected")
