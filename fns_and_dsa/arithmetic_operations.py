@@ -3,11 +3,11 @@
 def perform_operation(num1, num2, operation):
         
     match operation:
-        case "+":
+        case "add":
             return num1 + num2
-        case "-":
+        case "subtract":
             return num1 - num2
-        case "*":
+        case "multiply":
             return num1 * num2
-        case "/":
+        case "divide":
             return num1 / num2 if num2 != 0 else 'Cannot divide by zero'       
