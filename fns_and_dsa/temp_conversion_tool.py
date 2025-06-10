@@ -22,7 +22,7 @@ elif choice == "F":
     temp_convert_c = convert_to_celsius(temp)
     print(f"{temp}°F is {temp_convert_c}°C")
 else:
-    print("Invalid temperature. Please enter a temperature value.")
+    print("Invalid temperature. Please enter a numeric value.")
 
 if __name__ == "__main__":
     pass
