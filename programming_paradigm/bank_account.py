@@ -1,5 +1,5 @@
 class BankAccount:
-    def __init__(self, account_balance, initial_balance=0):
+    def __init__(self, account_balance, initial_balance= 0.0):
         self.account_balance = account_balance
         self.initial_balance = initial_balance
 
@@ -15,7 +15,7 @@ class BankAccount:
             self.account_balance -= amount
             return self.account_balance
         else:
-            return False
-        
+            raise ValueError("Insufficient funds")
+
     def display_balance(self):
-        print("Current balance:", "$" + str(self.account_balance))
+        print("Current balance:", f"${self.account_balance:.2f}")
