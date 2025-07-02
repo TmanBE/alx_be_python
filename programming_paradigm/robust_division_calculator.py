@@ -7,4 +7,4 @@ def safe_divide(numerator, denominator):
         else:
             return f"The result of the division is {num / denom}"
     except ValueError:
-        return " Error: Please enter numeric values only."
+        raise ValueError("Error: Please enter numeric values only.")
