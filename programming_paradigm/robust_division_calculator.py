@@ -5,6 +5,6 @@ def safe_divide(numerator, denominator):
         if denom == 0:
             return "Error: Cannot divide by zero."
         else:
-            print(f"The result of the division is {num / denom}")
+            return f"The result of the division is {num / denom}"
     except ValueError:
         return " Error: Please enter numeric values only."
